@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+  font-size: 1rem;
+  color: white;
+  background: grey;
+  
+}
+
+// backgrounds
+.background1{
+  background: url(https://images.unsplash.com/photo-1512229146678-994d3f1e31bf?auto=format&fit=crop&ixid=eyJhcHBfaWQiOjEyMDd9&ixlib=rb-1.2.1&q=80&w=1949) 50%/cover;
+
+}
+.background2{
+  background: url(https://images.unsplash.com/photo-1518837695005-2083093ee35b?auto=format&fit=crop&ixlib=rb-1.2.1&q=80&w=1050) 50%/cover;
+}
+.background3{
+  background: url(https://images.unsplash.com/photo-1571371867188-fdc3f1f8e62d?auto=format&fit=crop&ixid=eyJhcHBfaWQiOjEyMDd9&ixlib=rb-1.2.1&q=80&w=1050) 50%/cover;
+
+}
+.background4{
+  background: url(https://images.unsplash.com/photo-1569264167104-af07e7c1ebd9?auto=format&fit=crop&ixid=eyJhcHBfaWQiOjEyMDd9&ixlib=rb-1.2.1&q=80&w=1050) 50%/cover;
+
+}
+.background5{
+  background: linear-gradient(-45deg,#3bdbf7,#c71778,#04cbfd,#ec00cc);
+  background-image: linear-gradient(-45deg, rgb(59, 219, 247), rgb(199, 23, 120), rgb(4, 203, 253), rgb(236, 0, 204));
+    background-position-x: initial;
+    background-position-y: initial;
+    background-size: 400% 400%;
+    
+}
+
+

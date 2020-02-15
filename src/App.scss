@@ -1,0 +1,140 @@
+#App{
+    height: 100vh !important;
+}
+
+.header{
+    height: 10vh;
+    p{
+      font-size: 2rem;
+      margin-left: 1rem;
+      padding-top: 0.5rem;
+      letter-spacing: 3px;
+    }
+  }
+
+.clock{
+    margin-top: -5vh;
+   
+    font-weight: 300;
+    display: flex;
+    height: 80vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .clock-wrapper{
+        font-size: 8rem;
+    }
+    .msg{
+        font-size: 2.2rem;
+        display: inline;
+       span{
+           padding: 2rem;
+           i{
+               color: lightgrey;
+               &:hover{
+                   color: white;
+                   cursor: pointer;
+               }
+           }
+       }
+    }
+    .show-seconds{
+        display: inline;
+    }
+    #submit{
+        display: inline;
+    }
+    
+    //form styles
+    form{
+        background: rgba($color: #dddddd, $alpha: .4);
+        padding: 1rem;
+        border-radius: 10px;
+        input{
+            background: none;
+            border: 0;
+            border-bottom: 2px white solid;
+            color: white;
+            &::placeholder{
+                color: #dddddd
+            }
+            &:focus{
+                outline: none;
+            }
+
+        }
+        button{
+            background: none;
+            border: none;
+            color: rgb(202, 202, 202);
+
+            &:hover{
+                color: white
+            }
+            &:focus{
+                outline: none;
+            }
+        }
+    }
+
+    @media screen and (max-width: 800px){
+        .show-seconds{
+           display: none;
+        }
+    }
+
+}
+
+.footer{
+    #dropdown-basic-button{
+        position: absolute;
+        top: 2.5vh;
+        right: 0;
+        margin-right: 3rem;
+        color: white !important;
+        text-decoration: none;
+       
+    }
+
+    #copyright{
+        position: absolute;
+        bottom: 0;
+        margin-left: 1rem;
+    }
+
+    .links{
+        display: flex;
+        justify-content: space-around;
+        width: 60vw;
+        margin: auto;
+        
+        i{
+            padding: .5rem;
+            background: white;
+            border-radius: 50%;
+        }
+        #google{
+            color: black;
+            font-size: 1.25rem;
+        }
+        #youtube{
+            color: red;
+            font-size: 1.25rem;
+        }
+        #instagram{
+            color: rgb(196, 73, 73);
+            font-size: 1.25rem;
+        }
+        #facebook{
+            color: blue;
+            font-size: 1.25rem;
+        }
+        #twitter{
+            color: #00aced;
+            font-size: 1.25rem;
+        }
+    }
+}
+  
