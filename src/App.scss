@@ -49,9 +49,7 @@
     }
 
     @media screen and (max-width: 750px) {
-         .clock{
-             margin-top: -8vh;
-            }
+
         .msg{
             display: none;
         }
@@ -109,6 +107,13 @@
         }
     }
 
+}
+
+@media screen and (max-width: 750px) {
+    .clock{
+        margin-top: -10vh;
+       }
+ 
 }
 
 // footer styles
@@ -171,7 +176,7 @@
         #dropdown-basic-button{
             position: absolute;
             right: -5vw;
-            top: 15vh;
+            top: 17vh;
             
             
            
