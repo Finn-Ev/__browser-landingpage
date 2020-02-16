@@ -109,9 +109,6 @@ class Clock extends Component {
     componentDidMount(){
         this.tick()
         this.getTageszeit()
-        console.log(this.state.hovering);
-        
-        
         
         
     }
