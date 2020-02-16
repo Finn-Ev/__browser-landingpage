@@ -32,6 +32,7 @@ class App extends React.Component {
       <Header />
       <Clock test={this.test} handleSubmit={this.handleSubmit} />
       <Footer changeBackground={this.changeBackground}/>
+      
     </div>
      );
 

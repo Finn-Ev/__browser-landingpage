@@ -118,7 +118,7 @@ class Clock extends Component {
         const msg = <span onMouseEnter={()=>this.setState({hovering: true})} onMouseLeave={()=>this.setState({hovering: false})}>
         {this.state.msg}&nbsp;{this.state.username} {this.state.hovering ? <i onClick={()=>this.reset()} class="fas fa-edit"></i> : ""}</span>
 
-        const form = <form onSubmit={()=>this.handleSubmit()}>
+        const form = <form onSubmit={()=>this.handleSubmit()}> 
                         <input required onChange={this.handleChange} id="name" name="input" placeholder="&nbsp;dein Vorname" type="text"/> 
                         <button id="submit" type="submit" ><i class="fas fa-check"></i></button>
                      </form>
