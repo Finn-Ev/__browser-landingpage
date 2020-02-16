@@ -14,7 +14,6 @@
 
 .clock{
     margin-top: -5vh;
-   
     font-weight: 300;
     display: flex;
     height: 80vh;
@@ -45,6 +44,26 @@
     }
     #submit{
         display: inline;
+    }
+
+    @media screen and (max-width: 750px) {
+        .msg{
+            display: none;
+        }
+    }
+
+    @media screen and (max-width: 550px) {
+        .clock-wrapper{
+             font-size: 7rem;
+             
+         }
+     }
+
+    @media screen and (max-width: 350px) {
+       .clock-wrapper{
+            font-size: 6rem;
+            
+        }
     }
     
     //form styles
@@ -136,5 +155,27 @@
             font-size: 1.25rem;
         }
     }
+}
+@media screen and (max-width: 768px){
+    .footer {
+
+        #dropdown-basic-button{
+            position: relative;
+     
+            text-align: center;
+           
+            width: 100vw;
+            
+           
+        }
+
+        .links{
+            width: 80vw;
+            margin-top: -12vh;
+            
+        }
+    }
+
+  
 }
   

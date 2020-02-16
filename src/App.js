@@ -10,7 +10,7 @@ class App extends React.Component {
   
   constructor(props) {
     super(props);
-    let background = localStorage.length>0 ? localStorage.getItem("background") : "background1"  
+    let background = localStorage.getItem("background")? localStorage.getItem("background") : "background2"  
     this.changeBackground = this.changeBackground.bind(this);
     this.state = { 
        selectedBg: background
