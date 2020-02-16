@@ -2,6 +2,7 @@
     height: 100vh !important;
 }
 
+// headerstyles
 .header{
     height: 10vh;
     p{
@@ -12,6 +13,7 @@
     }
   }
 
+//mainpart / clock styles
 .clock{
     margin-top: -5vh;
     font-weight: 300;
@@ -106,6 +108,7 @@
 
 }
 
+// footer styles
 .footer{
     #dropdown-basic-button{
         position: absolute;
@@ -134,6 +137,8 @@
             background: white;
             border-radius: 50%;
         }
+
+        // specific colour for each brand
         #google{
             color: black;
             font-size: 1.25rem;
