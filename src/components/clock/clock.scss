@@ -1,0 +1,101 @@
+.clock{
+    margin-top: -5vh;
+    font-weight: 300;
+    display: flex;
+    height: 80vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .clock-wrapper{
+        font-size: 8rem;
+    }
+    .msg{
+        font-size: 2.2rem;
+        display: inline;
+       span{
+           padding: 2rem;
+           i{
+               color: lightgrey;
+               &:hover{
+                   color: white;
+                   cursor: pointer;
+               }
+           }
+       }
+    }
+    .show-seconds{
+        display: inline;
+    }
+    #submit{
+        display: inline;
+    }
+
+    @media screen and (max-width: 750px) {
+
+        .msg{
+            display: none;
+        }
+    }
+
+    @media screen and (max-width: 550px) {
+        .clock-wrapper{
+             font-size: 7rem;
+             
+         }
+     }
+
+    @media screen and (max-width: 350px) {
+       .clock-wrapper{
+            font-size: 6rem;
+            
+        }
+    }
+    
+    //form styles
+    form{
+        background: rgba($color: #dddddd, $alpha: .4);
+        padding: 1rem;
+        border-radius: 10px;
+        input{
+            background: none;
+            border: 0;
+            border-bottom: 2px white solid;
+            color: white;
+            &::placeholder{
+                color: #dddddd
+            }
+            &:focus{
+                outline: none;
+            }
+
+        }
+        button{
+            background: none;
+            border: none;
+            color: rgb(202, 202, 202);
+
+            &:hover{
+                color: white
+            }
+            &:focus{
+                outline: none;
+            }
+        }
+    }
+
+    @media screen and (max-width: 800px){
+        .show-seconds{
+           display: none;
+        }
+    }
+
+}
+
+@media screen and (max-width: 750px) {
+    .clock{
+        margin-top: -10vh;
+       }
+ 
+}

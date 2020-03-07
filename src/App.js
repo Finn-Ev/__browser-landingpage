@@ -1,43 +1,29 @@
-import React from 'react';
-import "./App.scss"
+import React, { useState } from "react";
+import "./App.scss";
 
-import Header from "./components/Header"
-import Clock from "./components/Clock"
-import Footer from  "./components/Footer"
+import Header from "./components/Header";
+import Clock from "./components/clock/Clock";
+import Footer from "./components/Footer";
 
+const App = props => {
+  const [background, setBackground] = useState(
+    localStorage.getItem("background")
+      ? localStorage.getItem("background")
+      : "background2"
+  );
 
-class App extends React.Component {
-  
-  constructor(props) {
-    super(props);
-    let background = localStorage.getItem("background")? localStorage.getItem("background") : "background2"  
-    this.changeBackground = this.changeBackground.bind(this);
-    this.state = { 
-       selectedBg: background
-     }
-  }
+  const changeBackground = background => {
+    localStorage.setItem("background", background);
+    setBackground(localStorage.getItem("background"));
+  };
 
-  changeBackground = (background)=>{
-    localStorage.setItem('background', background);
-    this.setState({
-      selectedBg: localStorage.getItem("background")
-    })
-  }
-
-
-  render() { 
-
-    return ( 
-      <div className={this.state.selectedBg} id="App">
+  return (
+    <div className={background} id="App">
       <Header />
-      <Clock test={this.test} handleSubmit={this.handleSubmit} />
-      <Footer changeBackground={this.changeBackground}/>
-      
+      <Clock />
+      <Footer changeBackground={changeBackground} />
     </div>
-     );
+  );
+};
 
-  }
-
-}
- 
 export default App;
