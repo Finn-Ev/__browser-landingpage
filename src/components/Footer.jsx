@@ -7,7 +7,7 @@ function Footer(props) {
         <div className="footer">
             <Dropdown changeBackground={props.changeBackground} />
             <Links />
-            <p id="copyright">&copy;&nbsp;Finn Evermann</p>
+            <span id="copyright"><a href="https://finnevermann.netlify.com/">&copy;&nbsp;Finn Evermann</a></span>
         </div>
 
     )

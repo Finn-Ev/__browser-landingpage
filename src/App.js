@@ -5,11 +5,11 @@ import Header from "./components/Header";
 import Clock from "./components/clock/Clock";
 import Footer from "./components/Footer";
 
-const App = props => {
+const App = () => {
   const [background, setBackground] = useState(
     localStorage.getItem("background")
       ? localStorage.getItem("background")
-      : "background2"
+      : "background1" // set an initial background
   );
 
   const changeBackground = background => {
@@ -18,11 +18,14 @@ const App = props => {
   };
 
   return (
-    <div className={background} id="App">
-      <Header />
-      <Clock />
-      <Footer changeBackground={changeBackground} />
+    <div className={`${background}`}>
+      <div id="App">
+        <Header />
+        <Clock />
+        <Footer changeBackground={changeBackground} />
+      </div>
     </div>
+
   );
 };
 
