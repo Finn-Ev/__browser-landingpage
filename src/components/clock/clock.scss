@@ -9,10 +9,11 @@
     flex-direction: column;
 
     .clock-wrapper{
-        font-size: 8rem;
+        font-size: 18vh;
     }
     .msg{
-        font-size: 2.2rem;
+        font-size: 5vh;
+        font-weight: 200 !important;
         display: inline;
        span{
            padding: 2rem;
@@ -26,7 +27,7 @@
        }
     }
     .show-seconds{
-        display: inline;
+        display: none;
     }
     #submit{
         display: inline;

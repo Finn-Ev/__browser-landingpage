@@ -2,14 +2,16 @@ import React from 'react';
 import DropdownButton from 'react-bootstrap/DropdownButton';
 import Dropdown from 'react-bootstrap/Dropdown';
 
-function DropdownComponent(props) {
+function DropdownComponent({changeBackground}) {
 	return (
 		<DropdownButton alignRight drop="up" variant="link" id="dropdown-basic-button" title="Hintergrund ">
-			<Dropdown.Item onClick={() => props.changeBackground('background1')}>Gebirge</Dropdown.Item>
-			<Dropdown.Item onClick={() => props.changeBackground('background2')}>Wasser</Dropdown.Item>
-			<Dropdown.Item onClick={() => props.changeBackground('background3')}>Polarlicht</Dropdown.Item>
-			<Dropdown.Item onClick={() => props.changeBackground('background4')}>See am Abend</Dropdown.Item>
-			<Dropdown.Item onClick={() => props.changeBackground('background5')}>Blau-Lila</Dropdown.Item>
+			<Dropdown.Item onClick={() => changeBackground('mountains')}>Gebirge</Dropdown.Item>
+			<Dropdown.Item onClick={() => changeBackground('aurora')}>Polarlicht</Dropdown.Item>
+			<Dropdown.Item onClick={() => changeBackground('firewatch-forest-day-green')}>Wald am Tag</Dropdown.Item>
+			<Dropdown.Item onClick={() => changeBackground('firewatch-forest-evening-red')}>Wald am Abend</Dropdown.Item>
+			<Dropdown.Item onClick={() => changeBackground('firewatch-forest-night-green')}>Wald bei Nacht</Dropdown.Item>
+			<Dropdown.Item onClick={() => changeBackground('firewatch-forest-evening-lilac')}>Wald am Abend 2</Dropdown.Item>
+			<Dropdown.Item onClick={() => changeBackground('firewatch-forest-night-black')}>Wald bei Nacht 2</Dropdown.Item>
 		</DropdownButton>
 	);
 }
