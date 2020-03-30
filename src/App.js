@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./App.scss";
 
 import Header from "./components/Header";
@@ -6,22 +6,33 @@ import Clock from "./components/clock/Clock";
 import Footer from "./components/Footer";
 
 const App = () => {
-  const [background, setBackground] = useState(
-    localStorage.getItem("background")
-      ? localStorage.getItem("background")
-      : "background1" // set an initial background
-  );
+  const [background, setBackground] = useState();
 
-  const changeBackground = background => {
-    localStorage.setItem("background", background);
-    setBackground(localStorage.getItem("background"));
+  useEffect(() => {
+  
+     if(localStorage.getItem("background") && localStorage.getItem("maintainBackground")){
+      setBackground(localStorage.getItem("background"))
+     } 
+ 
+  }, [background])
+
+  const changeBackground = (background, maintainBackground) => {
+    if(maintainBackground === true){
+      localStorage.setItem("maintainBackground", true)
+      localStorage.setItem("background", background)
+
+      setBackground(localStorage.getItem("background"));
+    }
+    else if(maintainBackground == null && !localStorage.getItem("maintainBackground") ) {
+      setBackground(background);
+    } 
   };
 
   return (
     <div className={`${background}`}>
       <div id="App">
         <Header />
-        <Clock />
+        <Clock changeBackground={changeBackground} />
         <Footer changeBackground={changeBackground} />
       </div>
     </div>

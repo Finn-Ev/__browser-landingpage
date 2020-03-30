@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "./clock.scss"
 
 class Clock extends Component {
-  constructor(props) {
+  constructor({props}) {
     super(props);
     this.state = {
       time: new Date(),
@@ -62,27 +62,32 @@ class Clock extends Component {
   };
 
   getTageszeit() {
-    setInterval(() => {
+    const { changeBackground } = this.props
       if (this.state.hours > 6 && this.state.hours < 12) {
         this.setState({
           msg: "Guten Morgen,"
         });
-        return "Morgen";
+        changeBackground("firewatch-forest-day-green", null)
+
       } else if (this.state.hours >= 12 && this.state.hours < 18) {
         this.setState({
           msg: "Guten Tag,"
         });
-        return "Tag";
+        changeBackground("firewatch-forest-day-green", null)
+
       } else if (this.state.hours >= 18 && this.state.hours < 24) {
         this.setState({
           msg: "Guten Abend,"
         });
+        changeBackground("firewatch-forest-evening-red", null)
+
       } else {
         this.setState({
           msg: "Gute Nacht,"
         });
+        changeBackground("firewatch-forest-night-green", null)
       }
-    }, 500);
+    ;
   }
 
   handleSubmit = () => {
@@ -104,7 +109,7 @@ class Clock extends Component {
 
   componentDidMount() {
     this.tick();
-    this.getTageszeit();
+    this.getTageszeit()
   }
 
   render() {
