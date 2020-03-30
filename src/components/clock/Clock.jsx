@@ -26,6 +26,7 @@ class Clock extends Component {
       });
 
       // Add "0" when needed
+      
       // Add "0" (hours)
       if (this.state.time.getHours() < 10) {
         this.setState({
@@ -58,7 +59,7 @@ class Clock extends Component {
           seconds: this.state.time.getSeconds()
         });
       }
-    }, 1000);
+    }, 500);
   };
 
   getTageszeit() {
@@ -67,25 +68,25 @@ class Clock extends Component {
         this.setState({
           msg: "Guten Morgen,"
         });
-        changeBackground("firewatch-forest-day-green", null)
+        changeBackground("firewatch-forest-gold-morning", false)
 
       } else if (this.state.hours >= 12 && this.state.hours < 18) {
         this.setState({
           msg: "Guten Tag,"
         });
-        changeBackground("firewatch-forest-day-green", null)
+        changeBackground("firewatch-forest-day-green", false)
 
       } else if (this.state.hours >= 18 && this.state.hours < 24) {
         this.setState({
           msg: "Guten Abend,"
         });
-        changeBackground("firewatch-forest-evening-red", null)
+        changeBackground("firewatch-forest-evening-red", false)
 
       } else {
         this.setState({
           msg: "Gute Nacht,"
         });
-        changeBackground("firewatch-forest-night-green", null)
+        changeBackground("firewatch-forest-night-green", false)
       }
     ;
   }

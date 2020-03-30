@@ -5,7 +5,6 @@ import { OverlayTrigger, Tooltip, Dropdown} from 'react-bootstrap';
 
 function DropdownComponent({ changeBackground }) {
 	const resetBackground = () => {
-		localStorage.removeItem("maintainBackground")
 		localStorage.removeItem("background")
 		window.location.reload()
 	}
@@ -29,6 +28,8 @@ return (
 		<Dropdown.Divider />
 		<Dropdown.Item onClick={() => changeBackground('mountains', true)}>Gebirge</Dropdown.Item>
 		<Dropdown.Item onClick={() => changeBackground('aurora', true)}>Polarlicht</Dropdown.Item>
+		<Dropdown.Divider />
+		<Dropdown.Item onClick={() => changeBackground('firewatch-forest-gold-morning', true)}>Wald am Morgen</Dropdown.Item>
 		<Dropdown.Item onClick={() => changeBackground('firewatch-forest-day-green', true)}>Wald am Tag</Dropdown.Item>
 		<Dropdown.Item onClick={() => changeBackground('firewatch-forest-evening-red', true)}>Wald am Abend</Dropdown.Item>
 		<Dropdown.Item onClick={() => changeBackground('firewatch-forest-night-green', true)}>Wald bei Nacht</Dropdown.Item>

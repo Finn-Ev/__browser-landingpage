@@ -10,20 +10,18 @@ const App = () => {
 
   useEffect(() => {
   
-     if(localStorage.getItem("background") && localStorage.getItem("maintainBackground")){
+     if(localStorage.getItem("background")){
       setBackground(localStorage.getItem("background"))
      } 
  
   }, [background])
 
   const changeBackground = (background, maintainBackground) => {
-    if(maintainBackground === true){
-      localStorage.setItem("maintainBackground", true)
+    if(maintainBackground){
       localStorage.setItem("background", background)
-
       setBackground(localStorage.getItem("background"));
     }
-    else if(maintainBackground == null && !localStorage.getItem("maintainBackground") ) {
+    else if(!maintainBackground ) {
       setBackground(background);
     } 
   };
