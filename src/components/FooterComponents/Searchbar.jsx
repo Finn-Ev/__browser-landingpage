@@ -1,8 +1,10 @@
-import React, {useState} from 'react';
+import React, {useState, useRef} from 'react';
 import { InputGroup, FormControl } from 'react-bootstrap';
 
 const Searchbar = () => {
     const [queryString, setQueryString] = useState("")
+
+    const inputRef = useRef()
 
     const handleSubmit = (e) => {
         e.preventDefault()
@@ -15,7 +17,7 @@ const Searchbar = () => {
         <form onSubmit={handleSubmit} className="search-bar">
             <InputGroup className="mb-5">
                 <InputGroup.Prepend className="google-icon">
-                    <InputGroup.Text><i className="fab fa-google"></i></InputGroup.Text>
+                    <InputGroup.Text onClick={()=>inputRef.current.focus()}><i className="fab fa-google"></i></InputGroup.Text>
                 </InputGroup.Prepend>
 
                 <FormControl
@@ -23,6 +25,7 @@ const Searchbar = () => {
                     aria-label="Google Suche"
                     value={queryString}
                     required
+                    ref={inputRef}
                     onChange={(e)=>setQueryString(e.target.value)}
                 />
                 <InputGroup.Prepend className="search-icon">

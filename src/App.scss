@@ -44,9 +44,7 @@
                 border-radius: none;
                 border: none;
                 &:focus{
-                    outline-style:none;
-                    box-shadow:none;
-                    border-color:transparent;
+                   box-shadow: 0px 0px 10px black;
                 }
             }
         }
