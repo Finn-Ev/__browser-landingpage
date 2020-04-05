@@ -9,7 +9,7 @@ function Footer(props) {
             <Searchbar/>
             <Dropdown changeBackground={props.changeBackground} />
             <Links />
-            <span id="copyright"><a href="https://finnevermann.netlify.com/">&copy;&nbsp;Finn Evermann</a></span>
+            <span id="copyright"><a href="https://finnevermann.netlify.com/">von&nbsp;Finn Evermann</a></span>
         </div>
 
     )

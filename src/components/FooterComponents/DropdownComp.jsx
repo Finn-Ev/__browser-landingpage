@@ -33,6 +33,7 @@ return (
 		<Dropdown.Item onClick={() => changeBackground('firewatch-forest-day-green', true)}>Wald am Tag</Dropdown.Item>
 		<Dropdown.Item onClick={() => changeBackground('firewatch-forest-evening-red', true)}>Wald am Abend</Dropdown.Item>
 		<Dropdown.Item onClick={() => changeBackground('firewatch-forest-night-green', true)}>Wald bei Nacht</Dropdown.Item>
+		<Dropdown.Item href="https://www.firewatchgame.com/">&copy;&nbsp;Firewatch</Dropdown.Item>
 	</DropdownButton>
 );
 }
