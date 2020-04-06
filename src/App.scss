@@ -2,7 +2,29 @@
     height: 100vh !important;
     background-color: rgba($color: #000000, $alpha: .2);
     overflow: hidden ;
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
 }
+
+.mobile-disclaimer{
+    background: rgb(13, 132, 136);
+    margin: auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    & p {
+        margin: 1rem;
+        font-size: 1.5rem;
+    }
+    @media screen and (min-width: 769px) {
+        display: none;
+    }
+    
+}
+
 
 // headerstyles
 .header {
