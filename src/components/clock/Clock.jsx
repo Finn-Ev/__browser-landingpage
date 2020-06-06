@@ -74,7 +74,7 @@ class Clock extends Component {
         msg: "Guten Tag,",
       });
       changeBackground("firewatch-forest-day-green", false);
-    } else if (this.state.hours >= 18 && this.state.hours < 24) {
+    } else if (this.state.hours >= 18 && this.state.hours < 23) {
       this.setState({
         msg: "Guten Abend,",
       });
