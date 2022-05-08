@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./clock.scss";
+import "./clock.css";
 
 class Clock extends Component {
   constructor({ props }) {
@@ -131,7 +131,7 @@ class Clock extends Component {
           onChange={this.handleChange}
           id="name"
           name="input"
-          placeholder="&nbsp;dein Vorname"
+          placeholder="&nbsp;Dein Vorname"
           type="text"
         />
         <button id="submit" type="submit">

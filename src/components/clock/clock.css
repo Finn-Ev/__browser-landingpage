@@ -1,0 +1,88 @@
+.clock {
+    margin-top: -5vh;
+    font-weight: 300;
+    display: flex;
+    height: 80vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.clock .clock-wrapper {
+    font-size: 18vh;
+}
+.clock .msg {
+    font-size: 5vh;
+    font-weight: 200 !important;
+    display: inline;
+}
+.clock .msg span {
+    padding: 2rem;
+}
+.clock .msg span i {
+    color: lightgrey;
+}
+.clock .msg span i:hover {
+    color: white;
+    cursor: pointer;
+}
+.clock .show-seconds {
+    display: none;
+}
+.clock #submit {
+    display: inline;
+}
+@media screen and (max-width: 750px) {
+    .clock .msg {
+        display: none;
+    }
+}
+@media screen and (max-width: 550px) {
+    .clock .clock-wrapper {
+        font-size: 7rem;
+    }
+}
+@media screen and (max-width: 350px) {
+    .clock .clock-wrapper {
+        font-size: 6rem;
+    }
+}
+.clock form {
+    background: rgba(221, 221, 221, .4);
+    padding: 1rem;
+    border-radius: 10px;
+}
+.clock form input {
+    font-style: italic;
+    background: none;
+    border: 0;
+    border-bottom: 2px white solid;
+    color: white;
+}
+.clock form input::placeholder {
+    color: #ddd;
+}
+.clock form input:focus {
+    outline: none;
+}
+.clock form button {
+    background: none;
+    border: none;
+    color: #cacaca;
+}
+.clock form button:hover {
+    color: white;
+}
+.clock form button:focus {
+    outline: none;
+}
+@media screen and (max-width: 800px) {
+    .clock .show-seconds {
+        display: none;
+    }
+}
+@media screen and (max-width: 750px) {
+    .clock {
+        margin-top: -10vh;
+    }
+}

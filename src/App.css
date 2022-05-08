@@ -1,0 +1,132 @@
+#App {
+  height: 100vh !important;
+  background-color: rgba(0, 0, 0, .2);
+  overflow: hidden;
+}
+@media screen and (max-width: 768px) {
+  #App {
+    display: none;
+  }
+}
+.mobile-disclaimer {
+  background: #0d8488;
+  margin: auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.mobile-disclaimer p {
+  margin: 1rem;
+  font-size: 1.5rem;
+}
+@media screen and (min-width: 769px) {
+  .mobile-disclaimer {
+    display: none;
+  }
+}
+.header {
+  height: 10vh;
+}
+.header p {
+  font-size: 1.66rem;
+  margin-left: 1rem;
+  padding-top: 0.5rem;
+  letter-spacing: 4px;
+  /*display: none;*/
+}
+
+
+ #dropdown-basic-button {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  color: white !important;
+  text-decoration: none;
+}
+.footer .search-bar {
+  width: 35%;
+  min-width: 500px;
+  margin: -15vh auto 12.5vh auto;
+}
+@media screen and (max-width: 768px) {
+  .footer .search-bar {
+    display: none;
+  }
+}
+.footer .search-bar .input-group .form-control {
+  border-radius: none;
+  border: none;
+}
+.footer .search-bar .input-group .form-control:focus {
+  box-shadow: 0px 0px 10px black;
+}
+.footer .search-bar .google-icon span {
+  border-radius: 10px 0 0 10px !important;
+}
+.footer .search-bar .search-icon span {
+  border-radius: 0 10px 10px 0 !important;
+  cursor: pointer;
+}
+.footer #copyright {
+  position: absolute;
+  bottom: 0.75rem;
+  margin-left: 0.75rem;
+}
+.footer #copyright a {
+  text-decoration: none;
+  color: white;
+}
+.footer #copyright a:hover {
+  text-decoration: underline;
+}
+.footer .links {
+  justify-content: space-around;
+  width: 60vw;
+  margin: auto;
+  display: none;
+}
+.footer .links i {
+  padding: 0.5rem;
+  background: white;
+  border-radius: 50%;
+}
+.footer .links a {
+  font-size: 1.25rem;
+}
+.footer .links #google {
+  color: black;
+}
+.footer .links #youtube {
+  color: red;
+}
+.footer .links #instagram {
+  color: #c44949;
+}
+.footer .links #facebook {
+  color: blue;
+}
+.footer .links #twitter {
+  color: #00aced;
+}
+@media screen and (max-width: 768px) {
+  #copyright {
+    display: none;
+  }
+
+   #dropdown-basic-button {
+    position: absolute;
+    right: -5vw;
+    top: 17vh;
+  }
+  .footer .links {
+    width: 80vw;
+    margin-top: -20vh;
+  }
+}
+@media screen and (max-width: 768px) and (max-width: 768px) {
+   #dropdown-basic-button {
+    display: none;
+  }
+}

@@ -1,27 +1,25 @@
 import React, { useState, useEffect } from "react";
-import "./App.scss";
+import "./App.css";
 
 import Header from "./components/Header";
 import Clock from "./components/clock/Clock";
 import Footer from "./components/Footer";
+import Dropdown from "./components/FooterComponents/DropdownComp";
 
 const App = () => {
   const [background, setBackground] = useState();
 
   useEffect(() => {
-
     if (localStorage.getItem("background")) {
-      setBackground(localStorage.getItem("background"))
+      setBackground(localStorage.getItem("background"));
     }
-
-  }, [background])
+  }, [background]);
 
   const changeBackground = (background, maintainBackground) => {
     if (maintainBackground) {
-      localStorage.setItem("background", background)
+      localStorage.setItem("background", background);
       setBackground(localStorage.getItem("background"));
-    }
-    else if (!maintainBackground) {
+    } else if (!maintainBackground) {
       setBackground(background);
     }
   };
@@ -35,9 +33,11 @@ const App = () => {
           <Footer changeBackground={changeBackground} />
         </div>
       </div>
-      <div className="mobile-disclaimer"><p>Diese Website ist nicht für mobile Endgeräte verfügbar</p></div>
+      <Dropdown changeBackground={changeBackground} />
+      <div className="mobile-disclaimer">
+        <p>Diese Website ist nicht für mobile Endgeräte verfügbar</p>
+      </div>
     </>
-
   );
 };
 

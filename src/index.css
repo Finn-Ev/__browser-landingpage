@@ -5,38 +5,28 @@ body {
   font-size: 1rem;
   color: white;
   background: grey;
-
 }
-
-// backgrounds
 .mountains {
   background: url(https://images.unsplash.com/photo-1512229146678-994d3f1e31bf?auto=format&fit=crop&ixid=eyJhcHBfaWQiOjEyMDd9&ixlib=rb-1.2.1&q=80&w=1949) 50%/cover;
 }
-
 .aurora {
   background: url(https://images.unsplash.com/photo-1571371867188-fdc3f1f8e62d?auto=format&fit=crop&ixid=eyJhcHBfaWQiOjEyMDd9&ixlib=rb-1.2.1&q=80&w=1050) 50%/cover;
 }
-
 .firewatch-forest-evening-red {
   background: url(https://images8.alphacoders.com/617/617304.jpg) 100%/cover;
 }
-
 .firewatch-forest-night-green {
   background: url(https://images6.alphacoders.com/681/681134.jpg) 10%/cover;
 }
-
 .firewatch-forest-day-green {
   background: url(https://images6.alphacoders.com/681/681136.jpg) center/cover;
 }
-
 .firewatch-forest-evening-lilac {
   background: url(https://images.alphacoders.com/959/959309.png) center/cover;
 }
-
 .firewatch-forest-night-black {
   background: url(https://images5.alphacoders.com/862/862186.jpg) center/cover;
 }
-
-.firewatch-forest-gold-morning{
+.firewatch-forest-gold-morning {
   background: url(https://images2.alphacoders.com/833/833534.png) center/cover;
 }
