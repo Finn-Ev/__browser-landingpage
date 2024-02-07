@@ -1,6 +1,6 @@
 #App {
   height: 100vh !important;
-  background-color: rgba(0, 0, 0, .2);
+  background-color: rgba(0, 0, 0, 0.2);
   overflow: hidden;
 }
 @media screen and (max-width: 768px) {
@@ -8,6 +8,7 @@
     display: none;
   }
 }
+
 .mobile-disclaimer {
   background: #0d8488;
   margin: auto;
@@ -37,14 +38,18 @@
   /*display: none;*/
 }
 
-
- #dropdown-basic-button {
+#dropdown-basic-button {
   position: absolute;
   bottom: 20px;
   right: 20px;
   color: white !important;
   text-decoration: none;
 }
+
+#dropdown-basic-button:focus {
+  box-shadow: none !important;
+}
+
 .footer .search-bar {
   width: 35%;
   min-width: 500px;
@@ -115,7 +120,7 @@
     display: none;
   }
 
-   #dropdown-basic-button {
+  #dropdown-basic-button {
     position: absolute;
     right: -5vw;
     top: 17vh;
@@ -125,8 +130,8 @@
     margin-top: -20vh;
   }
 }
-@media screen and (max-width: 768px) and (max-width: 768px) {
-   #dropdown-basic-button {
+@media screen and (max-width: 768px) {
+  #dropdown-basic-button {
     display: none;
   }
 }

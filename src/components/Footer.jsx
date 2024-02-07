@@ -5,8 +5,8 @@ import Searchbar from "./FooterComponents/Searchbar";
 function Footer(props) {
   return (
     <div className="footer">
-      <Searchbar />
-      <Links />
+      {/* <Searchbar /> */}
+      {/* <Links /> */}
     </div>
   );
 }
